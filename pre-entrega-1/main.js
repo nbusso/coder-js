@@ -1,4 +1,4 @@
-// CALCULARA DE PRECIOS
+// CALCULADORA DE PRECIOS
 
 let seguir = "si";
 
@@ -30,3 +30,4 @@ while(seguir.toLowerCase() != "no") {
 }
 
 alert(`Gracias por usar la calculadora de precios!`);
+
