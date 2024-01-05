@@ -22,7 +22,6 @@ class Producto {
 }
 
 // funciones 
-
 const nuevoCodigo = () => {
     let x = prompt(`Por favor ingrese el código del producto. Máximo 8 caracteres.`).toUpperCase();
 
@@ -49,7 +48,6 @@ const notNull = val => {
         }
         return val;
     }
-
 }
 
 const notNumber = val => {
@@ -69,10 +67,9 @@ const agregarProducto = (codigo, nombre, categoria, precio) => {
     let nuevo = new Producto(codigo, nombre, categoria, precio);
     productos.push(nuevo);
 }
+
+
 //armado de los nuevos productos
-//console.log(nuevoCodigo());
-
-
 while (seguirAgregando) {
     codigo = nuevoCodigo();
     nombre = notNull(prompt(`Ingrese el nombre del producto:`));

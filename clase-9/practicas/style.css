@@ -1,0 +1,49 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+#container {
+    width: 80%;
+    min-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#container .tarjeta {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    align-content: flex-start;
+    align-items: stretch;
+    background-color: #916e3c;
+    height: fit-content;
+    width: 45%;
+}
+
+#left {
+    border: none;
+}
+
+#right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+#right h1, h2, h4 {
+    
+}
+
+
+#right h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    overflow: hidden;
+
+}
