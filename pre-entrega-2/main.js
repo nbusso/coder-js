@@ -77,12 +77,10 @@ const agregarProducto = (codigo, nombre, categoria, precio) => {
 
 productosBase.forEach(producto => {
     agregarProducto(producto.codigo, producto.nombre, producto.categoria, producto.precio);
-})
+});
 
-console.log(productos);
 
 // FUNCIONES DEL MENU PRINCIPAL
-
 //funcion para agregar nuevo producto
 const menuNuevoProducto = () => {
     console.log('ingresaste a menu nuevo producto'); //debug
@@ -157,7 +155,7 @@ const menuFiltrarCategoria = () => {
             console.log(
             );
             selector = prompt(`Los productos en la categoría "${selector}" son:
-        ${mostrar}
+            ${mostrar}
         - - - - - - - 
         Desea buscar de nuevo? (si / no)`);
             selector == 'si' ? continuar = true : continuar = false;
@@ -249,5 +247,6 @@ const menuPrincipal = () => {
 }
 
 // inicio programa
-alert('Bienvenido!');
+alert(`Bienvenido!
+Por favor, utilice las opciones del menú para navegar por el programa!`);
 menuPrincipal();
